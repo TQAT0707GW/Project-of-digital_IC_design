@@ -1,0 +1,8 @@
+
+buttonControl: dùng để xem xét xem có một nút nào đó được nhấn hay không ? Nếu có nút được nhấn và giữ trong 10 giây thì sẽ tính là hợp lệ
+-Đầu ra của button là một phiếu hợp lệ, nếu có phiếu sẽ nhảy vào voteLogger để cộng lên 1 phiếu.
+
+voteLogger: xem xem có phiếu nào của 4 button được nhấn hay không, nếu có thì cộng vào phiếu của button đó
+
+modeControl: xem xét đang ở mode nào, có 3 trạng thái: 1 là chờ hai là mode 0 và 3 là mode 1. Dựa vào counter để xem xét xem có đang ở mode 0 hay không.
+Mode 0 thì ở chế độ vote, còn mode 1 thì ở chế độ hiển thị số phiếu của nút đang nhấn
