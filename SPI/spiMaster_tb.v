@@ -32,6 +32,6 @@ module spiMaster_tb;
 	
 	#335	dataIn=16'hA265;
 	#335	dataIn=16'h7564;
-	
+	#5 $finish;
 	end
 endmodule
