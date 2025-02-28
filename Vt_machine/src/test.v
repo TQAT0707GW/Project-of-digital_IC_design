@@ -31,40 +31,32 @@ module test();
   initial begin
     reset=1;mode=0;button1=0;button2=0;button3=0;button4=0;
     #100;
+	//Test with button 1 duplicate
     #100; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
     #5; reset = 0; mode = 0; button1 = 1;button2 = 0; button3 = 0; button4 = 0;
     #10 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
     #5 ;reset = 0; mode = 0; button1 = 1;button2 = 0; button3 = 0; button4 = 0;
     #200; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-    //#5 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #10; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #5 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-
+   
+	//button 2
     #25; reset = 0; mode = 0; button1 = 0;button2 = 1; button3 = 0; button4 = 0;
     #200 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #5; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #10 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #5 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-
+    
+	//button 2 and 3
     #25; reset = 0; mode = 0; button1 = 0;button2 = 1; button3 = 1; button4 = 0;
     #200; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-    //#5; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-    //#10; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-    //#5; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-
+   
+	// Test multiple with button 2 and 3
     #25; reset = 0; mode = 1; button1 = 0;button2 = 1; button3 = 0; button4 = 0;
     #100; reset = 0; mode = 1; button1 = 0;button2 = 0; button3 = 1; button4 =0;
-  //  #5; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-  //  #10 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #5; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
+  
 
     #25; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 1; button4 = 0;
     #100; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
 	#25; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 1; button4 = 0;
     #100; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #5; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #10 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
-   // #5 ;reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
+  
+  
 	#15; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 1; button4 = 0;
 	#100; reset = 0; mode = 0; button1 = 0;button2 = 0; button3 = 0; button4 =0;
 	#50; reset = 0; mode = 1; button1 = 0;button2 = 0; button3 = 1; button4 =0;
